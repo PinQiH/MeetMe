@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
   </head>
-  <body>
+  <body onload="calculateAgeOnLoad(); calculateExperienceOnLoad()">
 
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
@@ -142,18 +142,16 @@
               <p>我是黃品綺，目前擔任AI軟體工程師。對於人工智慧、資料庫管理、程式設計等都有基礎的經驗。除此之外，也有社群小編、電商服務、影片剪輯等等經驗。個性方面，我是個勇於挑戰的人，喜歡不斷的突破自己，增進不擅長的能力，我認為挑戰自己能使自己成為一個更優秀的人才，而我也希望自己能成為這樣的人。</p>
               <div class="about-profile">
                 <ul class="admin-profile">
-                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Tom Saulnier</span></li>
-                  <li><span class="pro-title"> Age </span> <span class="pro-detail">25 Years</span></li>
-                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">4 Years</span></li>
-                  <li><span class="pro-title"> Country </span> <span class="pro-detail">USA</span></li>
-                  <li><span class="pro-title"> Location </span> <span class="pro-detail">San Francisco, CA</span></li>
-                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">email@example.com</span></li>
-                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">+ (00) 123 456 789</span></li>
+                  <li><span class="pro-title"> Name </span> <span class="pro-detail">黃品綺</span></li>
+                  <li><span class="pro-title"> Age </span> <span class="pro-detail" id="age_Result"></span></li>
+                  <li><span class="pro-title"> Experience </span> <span class="pro-detail" id="experience_Result"></span></li>
+                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">cassie34131@gmail.com</span></li>
+                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">0972-723-890</span></li>
                   <li><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li>
                 </ul>
               </div>
-              <a href="#" class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a>
-              <a href="#" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+              <a href="https://carousell.app.link/cpZp8zEVMgb" class="btn btn-common"><i class="icon-paper-clip"></i> 二手商店</a>
+              <a href="mailto:cassie34131@gmail.com" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
             </div>
           </div>   
         </div>
@@ -173,8 +171,8 @@
                 <i class="icon-grid"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Front-end Development</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">網站/軟體開發</a></h3>
+                <p>後端開發, 全端整合, 網站維護, 資料庫管理 ...</p>
               </div>
             </div>
           </div>
@@ -185,8 +183,8 @@
                 <i class="icon-layers"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Graphic Design</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">AI系統開發</a></h3>
+                <p>機器學習模型開發, 資料分析和預測建模, 人工智慧解決方案, ChatGPT應用 ...</p>
               </div>
             </div>
           </div>
@@ -197,8 +195,8 @@
                 <i class="icon-briefcase"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Business Branding</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">多媒體服務</a></h3>
+                <p>影片剪輯, 社群小編, 電商平台管理 ...</p>
               </div>
             </div>
           </div>
@@ -209,8 +207,8 @@
                 <i class="icon-bubbles"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Consultancy</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">培訓和教育</a></h3>
+                <p>AI, 程式設計, 英語 ...</p>
               </div>
             </div>
           </div>
@@ -232,23 +230,16 @@
                 </li>
                 <li>
                   <div class="content-text">
-                    <h3 class="line-title">Bsc In CSE - Yale University</h3>
-                    <span>2012 - 2016</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <h3 class="line-title">輔仁大學 - 資訊管理系</h3>
+                    <span>2019/9 - 2023/6</span>
+                    <p class="line-text"></p>
                   </div>
                 </li>
                 <li>
                   <div class="content-text">
-                    <h3 class="line-title">Higher Secondary School - San Francisco College</h3>
-                    <span>2010 - 2012</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Secondary School - Labratory High School</h3>
-                    <span>2005 - 2010</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <h3 class="line-title">桃園高中</h3>
+                    <span>2016/9 - 2019/6</span>
+                    <p class="line-text"></p>
                   </div>
                 </li>
               </ul>
@@ -263,23 +254,23 @@
                 </li>
                 <li>
                   <div class="content-text">
-                    <h3 class="line-title">Art Director - Tesla Inc.</h3>
-                    <span>Jan 2018 - Present</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <h3 class="line-title">凌群電腦 - AI軟體工程師</h3>
+                    <span>2023/7 - Present</span>
+                    <p class="line-text">#AI 技術研究和創新 #AI解決方案發想 #ChatGPT深度應用 #後端API開發</p>
                   </div>
                 </li>
                 <li>
                   <div class="content-text">
-                    <h3 class="line-title">UX/UI Designer - Samsung</h3>
-                    <span>Nov 2016 - Dec 2017</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <h3 class="line-title">艾陽科技 - AI人工智慧圖像標註(兼)</h3>
+                    <span>2023/3 - 2023/7</span>
+                    <p class="line-text">#進行數據判讀及標註作業 #學習 AI 與機器學習的基礎觀念</p>
                   </div>
                 </li>
                 <li>
                   <div class="content-text">
-                    <h3 class="line-title">Intern UI Designer - UIdeck</h3>
-                    <span>Mar 2015 - Oct 2016</span>
-                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                    <h3 class="line-title">義匠義式湯麵 - 內外場服務員</h3>
+                    <span>2019/5 - 2022/11</span>
+                    <p class="line-text">#櫃檯門市接待與需求服務 #產品介紹及解說銷售 #電話接聽與人員接待事項 #客訴案件處理</p>
                   </div>
                 </li>
               </ul>
@@ -303,13 +294,13 @@
                 All 
               </a>
               <a class="filter btn btn-common" data-filter=".design">
-                Design 
+                網站/軟體開發
               </a>
               <a class="filter btn btn-common" data-filter=".development">
-                Development
+                AI系統開發
               </a>
               <a class="filter btn btn-common" data-filter=".print">
-                Print 
+                多媒體服務
               </a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->
@@ -317,16 +308,16 @@
 
           <!-- Portfolio Recent Projects -->
           <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-1.jpg" alt="" />  
+                  <img src="assets/img/gallery/Save-0.png" alt="" />  
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-1.jpg">
-                        <i class="icon-eye"></i>
+                      <a class="lightbox preview" href="https://github.com/PinQiH/FJU_Management_Review_frontend_backend_">
+                        <i class="icon-link"></i>
                       </a>
-                      <a class="link" href="#">
+                      <a class="link" href="https://github.com/PinQiH/school-website">
                         <i class="icon-link"></i>
                       </a>
                     </div>
@@ -334,16 +325,13 @@
                 </div>               
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-2.jpg" alt=""/> 
+                  <img src="assets/img/gallery/Save-1.png" alt=""/> 
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-2.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="#">
+                      <a class="link" href="https://github.com/PinQiH/speculator">
                         <i class="icon-link"></i>
                       </a>
                     </div>
@@ -354,13 +342,10 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-3.jpg" alt=""/> 
+                  <img src="assets/img/gallery/Save-2.png" alt=""/> 
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-3.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="#">
+                      <a class="link" href="https://github.com/PinQiH/NLP">
                         <i class="icon-link"></i>
                       </a>
                     </div>
@@ -368,16 +353,41 @@
                 </div>               
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development design">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-4.jpg" alt="" /> 
+                  <img src="assets/img/gallery/Save-3.png" alt="" /> 
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-4.jpg">
-                        <i class="icon-eye"></i>
+                      <a class="link" href="https://github.com/PinQiH/PetAdoptHub/tree/main">
+                        <i class="icon-link"></i>
                       </a>
-                      <a class="link" href="#">
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/Save-4.png" alt="" /> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="link" href="https://github.com/PinQiH/EasyShop">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/Save-5.png" alt=""/>
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="link" href="https://github.com/PinQiH/Parking_Where">
                         <i class="icon-link"></i>
                       </a>
                     </div>
@@ -388,35 +398,135 @@
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-5.jpg" alt="" /> 
+                  <img src="assets/img/gallery/Save-6.png" alt="" />
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-5.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="#">
+                      <a class="link" href="https://docs.google.com/document/d/1jDYokFNlwoJlb2XXAaTAkhqgX1Q5FjTH/edit?usp=sharing&ouid=115914282010070960027&rtpof=true&sd=true">
                         <i class="icon-link"></i>
                       </a>
                     </div>
                   </div>
-                </div>               
+                </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print design">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design">
               <div class="portfolio-item">
                 <div class="shot-item">
-                  <img src="assets/img/gallery/img-6.jpg" alt=""/>
+                  <img src="assets/img/gallery/Save-8.png" alt="" />
                   <div class="overlay">
                     <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-6.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="#">
+                      <a class="link"
+                        href="https://github.com/PinQiH/todolist">
                         <i class="icon-link"></i>
                       </a>
                     </div>
                   </div>
-                </div>               
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/Save-9.png" alt="" />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="link" href="https://github.com/PinQiH/visoin_api">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/Save-10.png" alt="" />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="https://instagram.com/pg_kpop?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr">
+                        <i class="icon-link"></i>
+                      </a>
+                      <a class="link" href="https://instagram.com/_2077mm?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/Save-11.png" alt="" />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="https://www.icloud.com/iclouddrive/095gNcPwbE8XMkJ3iySik45qg#D652F563-21D2-4F2F-AD86-54E1A6C79612">
+                        <i class="icon-link"></i>
+                      </a>
+                      <a class="link" href="https://www.icloud.com/iclouddrive/0745LViuPvXEfNxBHQXoCZwAA#RPReplay%5FFinal1682243151">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/Save-12.png" alt="" />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview"
+                        href="https://www.icloud.com/iclouddrive/0eccjWBsDrTILeESKh6OTQpkQ#video%5Fcache%5F2C0D8FE0-C7C2-4F5F-973C-BAE64A3373CB">
+                        <i class="icon-link"></i>
+                      </a>
+                      <a class="link"
+                        href="https://www.icloud.com/iclouddrive/054p914JFKq3dfg8imsdsDSKQ#video%5Fcache%5F2C797B81-4E65-4C09-9C26-0E16D7523B74">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/Save-13.png" alt="" />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview"
+                        href="https://www.icloud.com/iclouddrive/058V3UWFh8gQeYw-3J5wy0DNA#video%5Fcache%5F5EA1B49F-1613-4749-ABE6-7F42A5FD433A">
+                        <i class="icon-link"></i>
+                      </a>
+                      <a class="link"
+                        href="https://www.icloud.com/iclouddrive/06dTtqfthO_NRo7NDirT0X7tw#video%5Fcache%5F48B27EC6-A1C3-45E9-B461-7FF20171F107">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/Save-14.png" alt="" />
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview"
+                        href="https://www.icloud.com/iclouddrive/0d75t83fGppiGy54upZ5UhWJQ#video%5Fcache%5F325F04A1-8F93-4CDD-A930-7FF97A1AC871">
+                        <i class="icon-link"></i>
+                      </a>
+                      <a class="link"
+                        href="https://www.icloud.com/iclouddrive/0ffzG6XrfaUwo04xP4mjozODg#video%5Fcache%5F63612048-E6B6-46F9-A106-B2F88B2C969B">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -426,149 +536,12 @@
     </section>
     <!-- Portfolio Section Ends --> 
 
-    <!-- Counter Area Start-->
-    <section class="counter-section section-padding">
-      <div class="container">
-        <div class="row">
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon"><i class="icon-briefcase"></i></div>
-              <div class="counterUp">250</div>
-              <p>Project Working</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon"><i class="icon-check"></i></div>
-              <div class="counterUp">950</div>
-              <p>Project Done</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon"><i class="icon-diamond"></i></div>
-              <div class="counterUp">150</div>
-              <p>Awards Received</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon"><i class="icon-heart"></i></div>
-              <div class="counterUp">299</div>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Counter Area End-->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="section-padding">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="contact-block">
-                <h2>Contact Form</h2>
-                <form id="contactForm">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>                                 
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div> 
-                    </div>
-                     <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="submit-button">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                        <div class="clearfix"></div> 
-                      </div>
-                    </div>
-                  </div>            
-                </form>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="footer-right-area wow fadeIn">
-                <h2>Contact Address</h2>
-                <div class="footer-right-contact">
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-map-marker"></i>
-                    </div>
-                    <p>San Francisco, CA</p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-envelope"></i>
-                    </div>
-                    <p><a href="mailto:hello@tom.com">hello@tom.com</a></p>
-                    <p><a href="mailto:tomsaulnier@gmail.com">tomsaulnier@gmail.com</a></p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <p><a href="#">+ (00) 123 456 789</a></p>
-                    <p><a href="#">+ (00) 123 344 789</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-            <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
-            </div>
-          </div>
-        </div>
-      </div>   
-    </section>
-    <!-- Contact Section End -->
-
     <!-- Footer Section Start -->
     <footer class="footer-area section-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-              <ul class="social-icon">
-                <li>
-                  <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
-                </li>
-                <li>
-                  <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
-                </li>
-                <li>
-                  <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
-                </li>
-                <li>
-                  <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
-                </li>
-                <li>
-                  <a class="instagram" href="#"><i class="icon-social-google"></i></a>
-                </li>
-              </ul>
               <p>Copyright © 2018 UIdeck All Right Reserved</p>
             </div>
           </div>
@@ -598,6 +571,8 @@
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
+    <script src="assets/js/calculateAge.js"></script>
+    <script src="assets/js/calculateExperience.js"></script>
       
   </body>
 </html>
